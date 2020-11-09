@@ -7,7 +7,6 @@ const Home = () => {
     <div className={styles.container}>
       <Menu />
       Page d'accueil
-      Sami Lafrance
     </div>
   )
 }
