@@ -8,6 +8,7 @@ const Home = () => {
       <Menu />
       Page d'accueil
       Marie est dans la branche dev
+      paulin Jouhet
     </div>
   )
 }
