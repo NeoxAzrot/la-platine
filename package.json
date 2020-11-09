@@ -6,6 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sami Lafrance, Paulin Jouhet, Marie Simonek, Malvina Brauge",
+  "author": "Sami Lafrance - Paulin Jouhet - Marie Simonek - Malvina Brauge",
   "license": "MIT"
 }
