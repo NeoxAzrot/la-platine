@@ -1,0 +1,20 @@
+/* CSS variables */
+:root {
+  --font-color: #F6F6F6;
+  --primary-color: #FFD315;
+  --dark-primary-color: #DE9608;
+  --background-menu: #1B1B1B;
+  --background: #232323;
+  --border-reduce-player: #454343;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  /*font-family: 'Fugaz One', cursive;*/
+  font-family: 'Montserrat', sans-serif;
+  
+}
