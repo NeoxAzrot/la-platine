@@ -8,6 +8,7 @@ const Home = () => {
       <Menu />
       Page d'accueil
       Sami Lafrance
+      Marie Simonek
     </div>
   )
 }
