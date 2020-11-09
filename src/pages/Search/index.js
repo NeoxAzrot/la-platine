@@ -1,13 +1,13 @@
 import React from 'react'
 import Menu from 'components/Menu'
-import styles from './Home.module.css'
+import styles from './Search.module.css'
 
-const Home = () => {
+const Search = () => {
   return (
     <div className={styles.container}>
-      Page d'accueil - Disquaire
+      Page de recherche
     </div>
   )
 }
 
-export default Home
+export default Search

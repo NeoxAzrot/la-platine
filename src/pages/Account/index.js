@@ -1,13 +1,13 @@
 import React from 'react'
 import Menu from 'components/Menu'
-import styles from './Home.module.css'
+import styles from './Account.module.css'
 
-const Home = () => {
+const Account = () => {
   return (
     <div className={styles.container}>
-      Page d'accueil - Disquaire
+      Page du compte
     </div>
   )
 }
 
-export default Home
+export default Account
