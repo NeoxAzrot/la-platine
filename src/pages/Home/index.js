@@ -7,6 +7,7 @@ const Home = () => {
     <div className={styles.container}>
       <Menu />
       Page d'accueil
+      Marie est dans la branche dev
     </div>
   )
 }
