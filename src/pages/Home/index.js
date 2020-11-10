@@ -1,11 +1,14 @@
 import React from 'react'
+import Layout from 'components/Layout'
 import styles from './Home.module.css'
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      Page d'accueil - Disquaire
-    </div>
+    <Layout>
+      <div className={styles.container}>
+        Page d'accueil - Disquaire
+      </div>
+    </Layout>
   )
 }
 

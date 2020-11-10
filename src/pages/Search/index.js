@@ -1,11 +1,14 @@
 import React from 'react'
+import Layout from 'components/Layout'
 import styles from './Search.module.css'
 
 const Search = () => {
   return (
-    <div className={styles.container}>
-      Page de recherche
-    </div>
+    <Layout>
+      <div className={styles.container}>
+        Page de recherche
+      </div>
+    </Layout>
   )
 }
 
