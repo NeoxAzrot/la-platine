@@ -5,7 +5,6 @@ import styles from './Menu.module.css'
 const Menu = () => {
   return (
     <nav className={styles.header}>
-      La Platine
       <ul className={styles.menu}>
         <li>
           <NavLink to="/home" className={styles.menuItem} activeClassName={styles.active}>Disquaire</NavLink>
