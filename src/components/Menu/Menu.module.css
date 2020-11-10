@@ -15,5 +15,9 @@
 .menuItem {
   padding: 1em;
   text-decoration: none;
-  color: white;
+  color: var(--font-color);
+}
+
+.active {
+  color: var(--primary-color);
 }
