@@ -5,7 +5,7 @@ const Disc = () => {
     return (
 
         <div>
-            <img className={styles.Disc} src = './img/Vynile3.png'></img>
+            <img className={styles.Disc} src='img/Vinyle.png' alt='disque qui tourne'/>
         </div>
     )
 }
