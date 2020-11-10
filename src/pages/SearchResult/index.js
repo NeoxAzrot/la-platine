@@ -1,17 +1,17 @@
 import React from 'react'
 import Layout from 'components/Layout'
-import styles from './Album.module.css'
+import styles from './SearchResult.module.css'
 import Title from 'components/Title'
 
-const Album = () => {
+const SearchResult = () => {
   return (
     <Layout>
-      <Title name="Vinyle"/>
+      <Title name="Résultat de recherche"/>
       <div className={styles.container}>
-        Page des albums
+        Page des résultats de recherche
       </div>
     </Layout>
   )
 }
 
-export default Album
+export default SearchResult

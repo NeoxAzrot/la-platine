@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from './Menu.module.css'
 
 const Menu = () => {
@@ -8,13 +8,13 @@ const Menu = () => {
       La Platine
       <ul className={styles.menu}>
         <li>
-          <Link to="/home" className={styles.menuItem}>Disquaire</Link>
+          <NavLink to="/home" className={styles.menuItem} activeClassName={styles.active}>Disquaire</NavLink>
         </li>
         <li>
-          <Link to="/search" className={styles.menuItem}>Recherche</Link>
+          <NavLink to="/search" className={styles.menuItem} activeClassName={styles.active}>Recherche</NavLink>
         </li>
         <li>
-          <Link to="/account" className={styles.menuItem}>Compte</Link>
+          <NavLink to="/account" className={styles.menuItem} activeClassName={styles.active}>Compte</NavLink>
         </li>
       </ul>
     </nav>
