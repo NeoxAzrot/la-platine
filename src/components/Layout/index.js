@@ -6,11 +6,8 @@ const Layout = (props) => {
   const { children } = props
   return (
     <div className={styles.layout}>
-
       <Menu />
-
       {children}
-
     </div>
   )
 }
