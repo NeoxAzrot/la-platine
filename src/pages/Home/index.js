@@ -11,6 +11,7 @@ const Home = () => {
       <Title name="Disquaire"/>
       <div className={styles.container}>
         <Link to="/player"><Disc size={329} image="../images/cover.jpg"/></Link>
+        <p>TEST</p>
       </div>
     </Layout>
   )
