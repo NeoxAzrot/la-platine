@@ -1,0 +1,15 @@
+.title {
+    font-family: 'Fugaz One', cursive;
+    color: var(--font-color);
+    font-size: 25px;
+}
+
+.background {
+    background-color: var(--background); 
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--font-color);
+    font-size: 15px ;
+}
