@@ -3,10 +3,12 @@ import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 
 const Title = (props) => {
-  const { name } = props
+  let { name } = props
+  name = ' | ' + name
+  if(window.location.pathname === '/') name = ''
   return (
     <Helmet>
-      <title>La Platine | {name}</title>
+      <title>La Platine{name}</title>
     </Helmet>
   )
 }
