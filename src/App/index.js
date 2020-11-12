@@ -13,7 +13,6 @@ import Likes from 'pages/Likes'
 import Settings from 'pages/Settings'
 
 import Player from 'pages/Player'
-
 function App() {
   return (
     <BrowserRouter>
