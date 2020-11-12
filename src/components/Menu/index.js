@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styles from './Menu.module.css'
-import HomeIcon from '../../icons/HomeIcon'
-import SearchIcon from '../../icons/SearchIcon'
-import AccountIcon from '../../icons/AccountIcon'
+import HomeIcon from 'icons/HomeIcon'
+import SearchIcon from 'icons/SearchIcon'
+import AccountIcon from 'icons/AccountIcon'
 
 const Menu = () => {
   return (
