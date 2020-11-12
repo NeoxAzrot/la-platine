@@ -12,7 +12,9 @@ const Player = () => {
       <div className={styles.container}>
         Page du player
       </div>
-      <Disc/>
+      <div className={styles.Disc}>
+        <Disc/>
+      </div>
     </Layout>
 
   )
