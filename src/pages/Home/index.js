@@ -10,7 +10,12 @@ const Home = () => {
     <Layout>
       <Title name="Disquaire"/>
       <div className={styles.container}>
-        <Link to="/player"><Disc size={329} image="../images/cover.jpg"/></Link>
+        <Link to="/"><img className={styles.logo} src='../images/logo.png' alt='La Platine'/></Link>
+        <div>
+          <Disc size={165} image="../images/coverFlyzen.jpg"/>
+          <Link to="/player"><Disc size={329} image="../images/coverNepal.jpg"/></Link>
+          <Disc size={165} image="../images/coverKikesa.png"/>
+        </div>
       </div>
     </Layout>
   )

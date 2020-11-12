@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './BrasDeLecture.css'
+import styles from './BrasDeLecture.module.css'
 
 const BrasDeLecture = () => {
     return (

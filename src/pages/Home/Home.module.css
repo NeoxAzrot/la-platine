@@ -1,3 +1,10 @@
 .container {
-  height: 100vh;
+  height: calc(100vh - 60px - 47px);
+  position: relative;
+}
+
+.logo {
+  height: 43px;
+  width: 43px;
+  margin-top: 28px;
 }
