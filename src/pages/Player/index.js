@@ -3,6 +3,7 @@ import Layout from 'components/Layout'
 import styles from './Player.module.css'
 import Title from 'components/Title'
 import Disc from 'components/Disc'
+import BrasDeLecture from '../../components/Bras de lecture/brasDeLecture'
 
 
 const Player = () => {
@@ -13,6 +14,7 @@ const Player = () => {
         Page du player
       </div>
       <Disc/>
+      <BrasDeLecture/>
     </Layout>
 
   )
