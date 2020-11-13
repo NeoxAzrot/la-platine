@@ -5,15 +5,13 @@ import Title from 'components/Title'
 import Disc from 'components/Disc'
 import BrasDeLecture from 'components/BrasDeLecture'
 import { Link } from 'react-router-dom'
-
+import LogoBanner from 'components/LogoBanner'
 
 const Player = () => {
   return (
     <Layout>
       <Title name="Lecteur"/>
-      <div className={styles.container}>
-        Page du player
-      </div>
+      <LogoBanner size={64}/>
       <div className={styles.Disc}>
         <Disc size={355} image="../images/coverNepal.jpg"/>
       </div>
