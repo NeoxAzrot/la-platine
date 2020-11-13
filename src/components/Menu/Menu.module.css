@@ -20,8 +20,6 @@
 }
 
 .menuItem {
-  text-decoration: none;
-  color: var(--font-color);
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;

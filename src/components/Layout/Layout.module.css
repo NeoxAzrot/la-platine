@@ -19,3 +19,16 @@ body {
   background-color: var(--background);
   color: var(--font-color);
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+.layout {
+  height: calc(100vh - 60px - 47px); /* Pour qu'il prenne la taille de l'écran moins celle du menu et du player */
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
