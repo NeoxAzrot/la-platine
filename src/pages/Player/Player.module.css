@@ -3,7 +3,7 @@
   }
 
 .Disc{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 120 px;
+  left: 30 px;
 }
