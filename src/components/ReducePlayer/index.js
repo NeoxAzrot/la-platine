@@ -4,17 +4,18 @@ import ArrowUpIcon from 'icons/ArrowUpIcon'
 import LikeIcon from 'icons/LikeIcon'
 import PlayIcon from 'icons/PlayIcon'
 import Disc from 'components/Disc'
+import { Link } from 'react-router-dom'
 
 const ReducePlayer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.reducePlayer}>
         <div className={styles.coverAndText}>
-          <ArrowUpIcon/>
-          <Disc size={43} image="images/cover.jpg"/>
+        <Link to="/player"><ArrowUpIcon/></Link>
+          <Link to="/player"><Disc size={43} image="../images/coverNepal.jpg"/></Link>
           <div className={styles.infosText}>
-            <p className={styles.songTitle}>Babylone</p>
-            <p className={styles.songArtist}>Népal</p>
+            <Link to="/search/album" className={styles.songTitle}>Babylone</Link>
+            <Link to="/search/artist" className={styles.songArtist}>Népal</Link>
           </div>
         </div>
         <div className={styles.blankContainer}></div>
