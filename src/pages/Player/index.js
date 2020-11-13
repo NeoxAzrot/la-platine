@@ -21,9 +21,8 @@ const Player = () => {
         </div>
         <BrasDeLecture/>
         <div className={styles.titles}>
-          <Link to="/search/album" className={styles.songTitle}>Babylone</Link>
-          <br/>
-          <Link to="/search/artist" className={styles.songArtist}>Népal</Link>
+          <p className={styles.songTitle}>Babylone</p>
+          <p className={styles.songArtist}>Népal</p>
         </div>
       </div>
     </Layout>
