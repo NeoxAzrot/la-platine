@@ -55,8 +55,6 @@
 .infosText a {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: var(--font-color);
-  text-decoration: none;
 }
 
 .songTitle {

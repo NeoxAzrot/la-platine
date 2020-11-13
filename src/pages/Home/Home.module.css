@@ -38,6 +38,7 @@
 }
 
 .infos > * {
+  display: block;
   margin: 0;
 }
 

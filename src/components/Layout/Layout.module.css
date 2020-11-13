@@ -24,3 +24,8 @@ body {
 .layout {
   height: calc(100vh - 60px - 47px); /* Pour qu'il prenne la taille de l'écran moins celle du menu et du player */
 }
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
