@@ -1,7 +1,7 @@
-.icon path {
+/*.icon path {
   transition: 0.4s ease;
 }
 
 .icon:hover path, .icon:focus path {
   fill: var(--font-color);
-}
+}*/

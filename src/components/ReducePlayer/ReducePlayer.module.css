@@ -55,8 +55,6 @@
 .infosText a {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  color: var(--font-color);
-  text-decoration: none;
 }
 
 .songTitle {
@@ -68,4 +66,8 @@
 .songArtist {
   font-size: 9px;
   font-weight: 300;
+}
+
+.arrow {
+  transform: rotate(180deg);
 }

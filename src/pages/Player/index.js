@@ -7,10 +7,8 @@ import BrasDeLecture from 'components/BrasDeLecture'
 import { Link } from 'react-router-dom'
 import LogoBanner from 'components/LogoBanner'
 
+let soundFrom = 'du Disquaire'
 
-var soundFrom = 'Disquaire'
-var gender1 = 'du'
-var gender2 = 'de la'
 const Player = () => {
   return (
     <Layout>
