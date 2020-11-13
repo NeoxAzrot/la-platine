@@ -21,9 +21,9 @@ const Home = () => {
         </div>
         <BrasDeLecture/>
         <div className={styles.infos}>
-          <h3 className={styles.title}>Babylone</h3>
-          <p className={styles.album}>444NUITS</p>
-          <p className={styles.artist}>Népal</p>
+          <Link to="/search/album"><h3 className={styles.title}>Babylone</h3></Link>
+          <Link to="/search/album"><p className={styles.album}>444NUITS</p></Link>
+          <Link to="/search/artist"><p className={styles.artist}>Népal</p></Link>
         </div>
       </div>
     </Layout>

@@ -6,7 +6,7 @@ const LogoBanner = (props) => {
     const {size} = props
         return (
             <div className={styles.container}>
-                <img className={styles.banner} style={{height: `${size}px`, width: `auto`}} src='images\LogoLaPlatineBanner.png'/>
+                <img className={styles.banner} style={{height: `${size}px`, width: `auto`}} src='images\LogoLaPlatineBanner.png' alt='La Platine'/>
             </div>
         )
 }

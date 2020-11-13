@@ -7,7 +7,7 @@ const SearchBar=(props) => {
     console.log(props)
         return (
 
-            <div>
+            <div className={styles.container}>
                  <input type="text" placeholder={placeholder}></input>
             </div>
         )
