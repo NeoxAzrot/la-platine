@@ -1,6 +1,32 @@
 .Listener{
-    font-family: 'Montserrat';
-    size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
     display: flex;
     justify-content: center;
+    color: #FFFFFF;
+}
+
+.titles{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.songTitle{
+    font-weight: bold;
+    font-size: 25pt;
+
+}
+
+.songArtist{
+    font-size: 16pt;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

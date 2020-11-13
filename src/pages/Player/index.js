@@ -15,17 +15,18 @@ const Player = () => {
   return (
     <Layout>
       <Title name="Lecteur"/>
-      {/*la size modifie la size de la hauteur du logobanner seulement*/}
-      <LogoBanner size={64}/>
-  <p className={styles.Listener}>Ecoute à partir {gender1} {soundFrom}</p>
-      <div className={styles.Disc}>
-        <Disc size={355} image="../images/coverNepal.jpg"/>
-      </div>
-      <BrasDeLecture/>
-      <div className={styles.titles}>
-        <Link to="/search/album" className={styles.songTitle}>Babylone</Link>
-        <br/>
-        <Link to="/search/artist" className={styles.songArtist}>Népal</Link>
+      <div className={styles.content}>
+        {/*la size modifie la size de la hauteur du logobanner seulement*/}
+        <LogoBanner size={64}/>
+        <p className={styles.Listener}>Ecoute à partir {gender1} {soundFrom}</p>
+        <div className={styles.Disc}>
+          <Disc size={355} image="../images/coverNepal.jpg"/>
+        </div>
+        <BrasDeLecture/>
+        <div className={styles.titles}>
+          <p className={styles.songTitle}>Babylone</p>
+          <p className={styles.songArtist}>Népal</p>
+        </div>
       </div>
     </Layout>
 
