@@ -18,4 +18,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--background);
   color: var(--font-color);
+  overflow-x: hidden;
+}
+
+.layout {
+  height: calc(100vh - 60px - 47px); /* Pour qu'il prenne la taille de l'écran moins celle du menu et du player */
 }
