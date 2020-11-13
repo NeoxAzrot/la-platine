@@ -5,11 +5,19 @@ import Slider from "@material-ui/core/Slider";
 
 const useStyles = makeStyles({
   root: {
-    width: 200
+    width: 100,
+    color: '#ffd315',
+  },
+  text: {
+    fontFamily: 'Montserrat',
+    color: 'white',
+    fontSize: '15px',
+    justifyContent: 'flex-start',
   }
 });
 
-export default function ContinuousSlider() {
+export default function ContinuousSlider(props) {
+  const { TextLeft, TextRight } = props
   const classes = useStyles();
   const [value, setValue] = React.useState(30);
 
@@ -18,18 +26,18 @@ export default function ContinuousSlider() {
   };
 
   return (
-    <div className={classes.root}>
-      <Grid container spacing={2}>
-        <Grid item>Text1</Grid>
-        <Grid item xs>
-          <Slider
-            value={value}
-            onChange={handleChange}
-            aria-labelledby="continuous-slider"
-          />
+      <div>
+        <Grid container spacing={2}>
+          <Grid className={classes.text} item>{TextLeft}</Grid>
+          <Grid item xs>
+            <Slider className={classes.root}
+              value={value}
+              onChange={handleChange}
+              aria-labelledby="continuous-slider"
+            />
+          </Grid>
+          <Grid className={classes.text} item>{TextRight}</Grid>
         </Grid>
-        <Grid item>Text2</Grid>
-      </Grid>
-    </div>
+      </div>
   );
 }
