@@ -1,27 +1,23 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
+import styles from './AvatarArtist.module.css'
+import PropTypes from 'prop-types'
 
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: 'flex',
-    '& > *': {
-      marginTop:'50px',
-      width:'162px',
-      height:'162px',
-      marginLeft:'auto',
-      marginRight:'auto'
-    },
-  },
-}));
-
-const AvatarArtiste =(props)=>  {
-  const classes=useStyles();
+const AvatarArtist =(props)=>  {
+  const { url, alt } = props
   return (
-    <div className={classes.root}>
-      <Avatar  src={props.image} /> 
-       </div>
+    <div className={styles.container}>
+      <img src={url} alt={alt} className={styles.image}/> 
+    </div>
   );
 }
-export default AvatarArtiste
+
+AvatarArtist.propTypes = {
+  url: PropTypes.string,
+  alt: PropTypes.string
+}
+
+AvatarArtist.defaultProps = {
+  alt: 'Artiste'
+};
+
+export default AvatarArtist

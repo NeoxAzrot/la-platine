@@ -27,7 +27,7 @@ const ReducePlayer = () => {
         </div>
         <div className={styles.blankContainer}></div>
         <div className={styles.icons}>
-          <LikeIcon/>
+          <LikeIcon like={false}/>
           <div onClick={togglePlay}>{playIsActive ? <PauseIcon/> : <PlayIcon/>}</div>
           </div>
       </div>

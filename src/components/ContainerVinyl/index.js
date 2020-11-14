@@ -1,28 +1,22 @@
 import React from "react"
 import styles from "./ContainerVinyl.module.css"
-import PochetteVinyl from "components/PochetteVinyl"
-
-
+import { Link } from 'react-router-dom'
 
 const ContainerVinyl = (props) => {
-    return (
-     <div className={styles.container}>
+  const { vinyls } = props
+  return (
+    <div className={styles.container}>
 
-        {props.images.map((image) => {
-         return (
-           <div className={styles.cover}> 
-            <PochetteVinyl src={image}/>
+      {vinyls.map((vinyl) => {
+        return (
+          <div className={styles.item} key={vinyl[0]}>
+            <Link to="/search/album"><img className={styles.image} src={vinyl[1]} alt="Cover"/></Link>
           </div> 
-          )
-        })}
-
-        </div> 
-      )
-    }
+        )
+      })}
+        
+    </div> 
+  )
+}
       
 export default ContainerVinyl
-
-
-/* renommer composant = container
-props = tableau -> mettre dedans src 
-faire un maps du tableau */

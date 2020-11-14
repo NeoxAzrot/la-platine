@@ -1,6 +1,6 @@
 {
   "name": "la-platine",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "La Platine est une platforme de streaming audio.",
   "private": true,
   "dependencies": {

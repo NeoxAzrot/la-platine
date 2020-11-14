@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import styles from './LikeIcon.module.css'
+import PropTypes from 'prop-types'
 
-const LikeIcon = () => {
-  const [likeIsActive, setLikeIsActive] = useState(false)
+const LikeIcon = (props) => {
+  const { like } = props
+  const [likeIsActive, setLikeIsActive] = useState(like)
 
   const toggleLike = () => {
     setLikeIsActive(!likeIsActive)
@@ -15,5 +17,13 @@ const LikeIcon = () => {
     </svg>
   )
 }
+
+LikeIcon.propTypes = {
+  like: PropTypes.bool
+}
+
+LikeIcon.defaultProps = {
+  like: false
+};
 
 export default LikeIcon

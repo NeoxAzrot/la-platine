@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  border: 1px solid var(--border-artist);
+}
