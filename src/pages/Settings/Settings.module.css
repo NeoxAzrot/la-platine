@@ -97,3 +97,16 @@
   padding: 0 20px;
   margin-top: -4px;
 }
+
+.moreInfos {
+  padding-bottom: 10px;
+}
+
+.itemSwitch button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}

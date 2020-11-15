@@ -10,8 +10,10 @@ const SearchResult = () => {
       <Title name="Résultat de recherche"/>
       <div className={styles.container}>
         Page des résultats de recherche
+        <div className={styles.searchBar}>
+          <SearchBar/>
+        </div>
       </div>
-      <SearchBar placeholder='null'  className={styles.SearchBar}/>
     </Layout>
   )
 }

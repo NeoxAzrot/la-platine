@@ -1,0 +1,30 @@
+.container {
+   margin-right: 90px;
+}
+
+.container input {
+  outline: none;
+	box-sizing: content-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  caret-color: var(--primary-color);
+  background: var(--font-color) url('searchIcon.svg') no-repeat 12px center;
+	border: solid 1px var(--font-color);
+	padding: 0 45px;
+  width: 100%;
+  height: 50px;
+	border-radius: 25px;
+  transition: all 0.5s;
+  color: var(--search-text);
+}
+
+.container input::placeholder {
+  color: var(--search-text);
+  opacity: 1;
+}
+
+.container input::-webkit-search-decoration,
+.container input::-webkit-search-cancel-button {
+	display: none; 
+}

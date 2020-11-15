@@ -1,37 +1,124 @@
 .container {
-  padding-bottom: calc(35px + 60px + 47px); /* Pour permettre de scroll sous le menu */
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
+  height: 100%;
 }
 
-.Listener{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
+.arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 
-.titles{
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    display: flex;
-    align-items:  center;
-    flex-direction: column;
-    justify-content: space-around;
+.arrow svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  transform: rotate(90deg);
 }
 
-.titles a {
-    display: block;
+.banner img{
+  height: 64px;
+  width: auto;
+  margin-top: 10px;
 }
 
-.songTitle{
-    font-weight: bold;
-    font-size: 25pt;
-
+.banner p {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
 }
 
-.songArtist{
-    font-size: 16pt;
+.banner {
+  margin-bottom: 25px;
+}
+
+.bras {
+  position: absolute;
+  top: 320px;
+  right: 0;
+}
+
+.infos {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.infos > * {
+  display: block;
+  margin: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.album {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.artist {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.songs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinyl {
+  position: relative;
+  margin-top: 70px;
+}
+
+.vinyl:first-child {
+  margin-top: 0;
+}
+
+.likeIcon svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.likeIcon {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+
+.icons svg {
+  width: 25px;
+  height: 25px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.icon:nth-child(2) {
+  transform: rotate(180deg);
 }

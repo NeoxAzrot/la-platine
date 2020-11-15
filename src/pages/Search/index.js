@@ -11,8 +11,8 @@ const Search = () => {
       <Title name="Recherche"/>
       <div className={styles.container}>
         <h2 className={styles.subTitle}>Rechercher</h2>
-        <div>
-          <SearchBar placeholder='vous cherchez ?' className={styles.SearchBar}/>
+        <div className={styles.searchBar}>
+          <SearchBar/>
         </div>
         <h2 className={styles.subTitle}>Derniers titres écoutés</h2>
         <ContainerSingle singles={
