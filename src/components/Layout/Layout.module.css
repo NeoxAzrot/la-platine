@@ -6,6 +6,7 @@
   --background-menu: #1B1B1B;
   --background: #232323;
   --border-reduce-player: #454343;
+  --border-artist: #707070;
 }
 
 body {
@@ -20,7 +21,8 @@ body {
   color: var(--font-color);
 }
 
-html, body {
+html, body { /* Pour ce super navigateur qui est Safari :) */
+  position: relative;
   overflow-x: hidden;
 }
 

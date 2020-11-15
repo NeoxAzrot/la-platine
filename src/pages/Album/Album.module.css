@@ -1,3 +1,28 @@
 .container {
-  padding-bottom: calc(35px + 60px + 47px); /* Pour permettre de scroll sous le menu */
+  margin-top: 45px;
+  padding-bottom: 67px;
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.arrow svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.infosAlbum {
+  margin-top: 50px;
+}
+
+.infosAlbum h1 {
+  font-size: 25px;
+  font-family: 'Fugaz One', cursive;
+  color: var(--font-color);
+  font-weight: 400;
 }

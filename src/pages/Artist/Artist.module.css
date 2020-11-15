@@ -1,3 +1,78 @@
 .container {
-  padding-bottom: calc(35px + 60px + 47px); /* Pour permettre de scroll sous le menu */
+  margin-top: 45px;
+  padding-bottom: 37px;
+}
+
+.arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.arrow svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.artist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artist h1 {
+  font-size: 32px;
+  font-family: 'Fugaz One', cursive;
+  color: var(--font-color);
+  font-weight: 400;
+}
+
+.description {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+  font-weight: 300;
+  text-align: left;
+  margin-top: 14px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.link {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.link i {
+  font-size: 22px;
+}
+
+.link span {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+.link li a {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.link li:last-child {
+  margin-bottom: 0;
+}
+
+.socialList {
+  width: 30px;
 }
