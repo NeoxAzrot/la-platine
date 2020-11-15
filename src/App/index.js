@@ -13,6 +13,8 @@ import Likes from 'pages/Likes'
 import Settings from 'pages/Settings'
 
 import Player from 'pages/Player'
+
+import Spotify from 'pages/Spotify'
 function App() {
   return (
     <BrowserRouter>
@@ -46,6 +48,10 @@ function App() {
 
         <Route path="/player">
           <Player />
+        </Route>
+
+        <Route path="/spotify">
+          <Spotify />
         </Route>
 
         <Route path="/">
