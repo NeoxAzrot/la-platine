@@ -6,10 +6,11 @@ import { useLocation } from 'react-router-dom'
 
 const Layout = (props) => {
   const { children } = props
-//fill={likeIsActive ? '#f6f6f6' : 'none'}
+  
   const location = useLocation()
   let layoutHeight = "100vh"
   if(location.pathname !== "/player") layoutHeight = "calc(100vh - 60px - 47px)"
+
   return (
     <div className={styles.layout} style={{height: layoutHeight}}>
       {children}

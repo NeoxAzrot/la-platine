@@ -33,7 +33,7 @@ const Player = () => {
         </div>
         <div className={styles.songs}>
           <div className={styles.vinyl}>
-            <Disc size={355} image="../images/coverNepal.jpg"/>
+            <Disc size={355} image="../images/coverNepal.jpg" play={playIsActive}/>
             <div className={styles.infos}>
               <Link to="/search/album" className={styles.title}>Babylone</Link>
               <Link to="/search/album" className={styles.album}>444NUITS</Link>
