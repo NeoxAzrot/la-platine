@@ -8,7 +8,6 @@
   position: relative;
   width: 100%;
   height: 230px;
-  overflow: hidden;
 }
 
 .vinyl {
@@ -33,7 +32,7 @@
 
 @keyframes animationVinylEnter {
   from {
-    transform: translate(0%, -50%) rotate(0deg);
+    transform: translate(-30%, -50%) rotate(0deg);
   }
 
   to {

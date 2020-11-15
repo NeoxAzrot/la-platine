@@ -1,0 +1,53 @@
+.container {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  width: 135px;
+  height: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--border-reduce-player);
+}
+
+.item:nth-child(even) {
+  margin-right: 10px;
+}
+
+.image {
+  height: 55px;
+  width: 55px;
+}
+
+.name {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+@media screen and (max-width: 352px) {
+  .item {
+    width: calc(100vw - 70px);
+    height: 100%;
+  }
+
+  .item:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .image {
+    height: 70px;
+    width: 70px;
+  }
+}

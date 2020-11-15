@@ -3,13 +3,13 @@
   padding-bottom: 67px;
 }
 
-.arrow {
+.settings {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 
-.arrow svg {
+.settings svg {
   height: 18px;
   width: 18px;
   cursor: pointer;
@@ -20,4 +20,18 @@
   font-family: 'Fugaz One', cursive;
   color: var(--font-color);
   font-weight: 400;
+  margin-top: 40px;
+}
+
+.titlePist {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.titlePist svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+  transform: rotate(270deg);
 }

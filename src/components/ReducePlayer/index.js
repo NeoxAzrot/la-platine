@@ -19,7 +19,7 @@ const ReducePlayer = () => {
       <div className={styles.reducePlayer}>
         <div className={styles.coverAndText}>
         <Link to="/player" className={styles.arrow}><ArrowUpIcon/></Link>
-          <Link to="/player"><Disc size={43} image="../images/coverNepal.jpg"/></Link>
+          <Link to="/player"><Disc size={43} image="../images/coverNepal.jpg" play={playIsActive}/></Link>
           <div className={styles.infosText}>
             <Link to="/search/album" className={styles.songTitle}>Babylone</Link>
             <Link to="/search/artist" className={styles.songArtist}>Népal</Link>
