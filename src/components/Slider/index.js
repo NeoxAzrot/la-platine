@@ -1,43 +1,68 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import Slider from "@material-ui/core/Slider";
+import React from 'react';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
+import MySlider from '@material-ui/core/Slider';
+import PropTypes from 'prop-types';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    width: 100,
-    color: '#ffd315',
+    width: 100 + theme.spacing(3) * 2,
   },
-  text: {
-    fontFamily: 'Montserrat',
-    color: 'white',
-    fontSize: '15px',
-    justifyContent: 'flex-start',
-  }
-});
+  margin: {
+    height: theme.spacing(3),
+  },
+}));
 
-export default function ContinuousSlider(props) {
-  const { TextLeft, TextRight } = props
+const PrettoSlider = withStyles({
+  root: {
+    color: '#FFD315',
+    height: 3,
+  },
+  thumb: {
+    height: 11,
+    width: 11,
+    backgroundColor: '#FFD315',
+    border: '2px solid currentColor',
+    marginTop: -4,
+    marginLeft: -5,
+    '&:focus, &:hover, &$active': {
+      boxShadow: 'inherit',
+    },
+  },
+  active: {},
+  valueLabel: {
+    left: 'calc(-50% - 9px)',
+  },
+  track: {
+    height: 3,
+    borderRadius: 2,
+  },
+  rail: {
+    height: 3,
+    borderRadius: 2,
+  },
+})(MySlider);
+
+const Slider = (props) => {
   const classes = useStyles();
-  const [value, setValue] = React.useState(30);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  const { step, min, max, defaultValue } = props
 
   return (
-      <div>
-        <Grid container spacing={2}>
-          <Grid className={classes.text} item>{TextLeft}</Grid>
-          <Grid item xs>
-            <Slider className={classes.root}
-              value={value}
-              onChange={handleChange}
-              aria-labelledby="continuous-slider"
-            />
-          </Grid>
-          <Grid className={classes.text} item>{TextRight}</Grid>
-        </Grid>
-      </div>
+    <div className={classes.root}>
+      <PrettoSlider valueLabelDisplay="auto" aria-label="pretto slider" defaultValue={defaultValue} 
+      step={step} min={min} max={max}/>
+    </div>
   );
 }
+
+Slider.propTypes = {
+  step: PropTypes.number,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  defaultValue: PropTypes.number
+}
+
+Slider.defaultProps = {
+  defaultValue: 0
+};
+
+export default Slider

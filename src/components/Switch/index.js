@@ -1,36 +1,50 @@
-import React from "react";
-import Switch from "@material-ui/core/Switch";
-import FormGroup from "@material-ui/core/FormGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormControl from "@material-ui/core/FormControl";
-import { makeStyles } from "@material-ui/core/styles";
+import React, { useState } from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import SwitchMaterial from '@material-ui/core/Switch';
+import PropTypes from 'prop-types'
 
-const useStyles = makeStyles({
-  root: {
-    color: '#ffd315',
+const MySwitch = withStyles({
+  switchBase: {
+    color: "#F6F6F6",
+    '&$checked': {
+      color: "#FFD315",
+    },
+    '&$checked + $track': {
+      backgroundColor: "#DE9608",
+    },
   },
-  text: {
-    fontFamily: 'Montserrat',
-    color: 'white',
-    fontSize: '15px',
-    justifyContent: 'flex-start',
-  }
-});
+  checked: {},
+  track: {
+    backgroundColor: "#707070"
+  },
+})(SwitchMaterial);
 
-export default function FormControlLabelPosition(props) {
-  const { Text } = props
-  const classes = useStyles();
+const Switch = (props) => {
+  const { name, checked } = props
+  const [checkIsActive, setCheckIsActive] = useState(checked)
+
+  const toggleCheck = () => {
+    setCheckIsActive(!checkIsActive)
+  }
+
   return (
-    <FormControl component="fieldset">
-      <FormGroup aria-label="position" row>
-        <FormControlLabel
-          className={classes.text}
-          value="start"
-          control={<Switch/>}
-          label={ Text }
-          labelPlacement="start"
-        />
-      </FormGroup>
-    </FormControl>
+    <FormGroup>
+      <FormControlLabel
+        control={<MySwitch checked={checkIsActive} onChange={toggleCheck} name={name} />}
+      />
+    </FormGroup>
   );
 }
+
+Switch.propTypes = {
+  name: PropTypes.string,
+  checked: PropTypes.bool
+}
+
+Switch.defaultProps = {
+  checked: false
+};
+
+export default Switch

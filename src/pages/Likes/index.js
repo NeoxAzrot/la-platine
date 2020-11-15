@@ -11,7 +11,7 @@ const Likes = () => {
     <Layout>
       <Title name="Likes"/>
       <div className={styles.container}>
-      <Link to="/" className={styles.arrow}><ArrowUpIcon/></Link>
+        <Link to="/account" className={styles.arrow}><ArrowUpIcon/></Link>
         <h1>Mes pistes</h1>
         <div className={styles.songs}>
             <SongLiked image="../images/album1.jpg" song="Fun" artist="Skegss" like={true}/>
