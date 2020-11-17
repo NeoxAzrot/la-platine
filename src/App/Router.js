@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from "react-router-dom"
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom"
 import Home from 'pages/Home'
 import Search from 'pages/Search'
 import SearchResult from 'pages/SearchResult'
@@ -9,53 +9,60 @@ import Account from 'pages/Account'
 import Likes from 'pages/Likes'
 import Settings from 'pages/Settings'
 import Player from 'pages/Player'
+import NotFound from 'pages/NotFound'
 import Spotify from 'pages/Spotify'
 
-const Rooter = () => {
+const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/home">
+        <Route exact path="/home">
           <Home />
         </Route>
 
-        <Route path="/search/result">
+        <Route exact path="/search/result">
           <SearchResult />
         </Route>
-        <Route path="/search/artist">
+        <Route exact path="/search/artist">
           <Artist />
         </Route>
-        <Route path="/search/album">
+        <Route exact path="/search/album">
           <Album />
         </Route>
-        <Route path="/search">
+        <Route exact path="/search">
           <Search />
         </Route>
 
-        <Route path="/account/likes">
+        <Route exact path="/account/likes">
           <Likes />
         </Route>
-        <Route path="/account/settings">
+        <Route exact path="/account/settings">
           <Settings />
         </Route>
-        <Route path="/account">
+        <Route exact path="/account">
           <Account />
         </Route>
 
-        <Route path="/player">
+        <Route exact path="/player">
           <Player />
         </Route>
 
-        <Route path="/spotify">
+        <Route exact path="/spotify">
           <Spotify />
         </Route>
 
-        <Route path="/">
+        <Route exact path="/">
           <Home />
         </Route>
+
+        <Route exact path="*">
+          <NotFound />
+        </Route>
+
+        <Redirect to="/404" />
       </Switch>
     </BrowserRouter>
   )
 }
 
-export default Rooter
+export default Router
