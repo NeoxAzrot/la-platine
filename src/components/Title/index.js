@@ -8,7 +8,7 @@ const Title = (props) => {
 
   
   useEffect(() => {
-    document.title = `La platine${name}`;
+    document.title = `La Platine${name}`;
   });
   return (
     <div></div>
