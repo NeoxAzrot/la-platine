@@ -1,15 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 
 const Title = (props) => {
   let { name } = props
   name = ' | ' + name
   if(window.location.pathname === '/') name = ''
+
+  
+  useEffect(() => {
+    document.title = `La platine${name}`;
+  });
   return (
-    <Helmet>
-      <title>La Platine{name}</title>
-    </Helmet>
+    <div></div>
   )
 }
 
