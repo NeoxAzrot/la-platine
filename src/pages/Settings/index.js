@@ -110,19 +110,19 @@ const Settings = () => {
             </div>
           </div>
           <div className={styles.itemSwitch}>
-            <Link to="/account/settings" className={styles.text}>
+            <Link to="/spotify" className={styles.text}>
               <h3>CGU</h3>
               <p>Tout ce qu'il faut savoir.</p>
             </Link>
           </div>
           <div className={styles.itemSwitch}>
-            <Link to="/account/settings" className={styles.text}>
+            <Link to="/spotify" className={styles.text}>
               <h3>Politique de confidentialité</h3>
               <p>Important pour vous et pour nous.</p>
             </Link>
           </div>
           <div className={styles.itemSwitch}>
-            <Link to="/account/settings" className={styles.text}>
+            <Link to="/spotify" className={styles.text}>
               <h3>Assistance</h3>
               <p>Laissez notre équipe et nos utilisateurs vous aider.</p>
             </Link>
@@ -131,7 +131,7 @@ const Settings = () => {
         <div className={styles.category}>
           <h2>Autre</h2>
           <div className={styles.itemSwitch}>
-            <Link to="/account/settings" className={styles.text}>
+            <Link to="/spotify" className={styles.text}>
               <h3>Déconnexion</h3>
               <p>Vous êtes connecté en tant que {user}.</p>
             </Link>
