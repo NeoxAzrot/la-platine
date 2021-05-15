@@ -8,10 +8,14 @@ We wanted to create an audio streaming platform using the [Spotify API](https://
 
 We wanted to play on vinyl, hence the name of our application.
 
+### Responsive
+
+It is a **PWA**, the design has been thought to be viewed on cell phones in priority.
+
 ## Our tools
 
-- Adobe XD
-- Adobe Illustrator
+- [Adobe Illustrator](https://www.adobe.com/fr/products/illustrator.html)
+- [Adobe XD](https://www.adobe.com/fr/products/xd.html)
 - [React.js](https://fr.reactjs.org/)
 - [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
