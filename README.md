@@ -4,7 +4,7 @@
 
 ## What is the turntable?
 
-We wanted to create an audio streaming platform using the Spotify API.
+We wanted to create an audio streaming platform using the [Spotify API](https://developer.spotify.com/documentation/web-api/).
 
 We wanted to play on vinyl, hence the name of our application.
 
@@ -12,8 +12,8 @@ We wanted to play on vinyl, hence the name of our application.
 
 - Adobe XD
 - Adobe Illustrator
-- React
-- Spotify API
+- [React.js](https://fr.reactjs.org/)
+- [Spotify API](https://developer.spotify.com/documentation/web-api/)
 
 ## Developers
 
