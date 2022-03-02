@@ -26,7 +26,7 @@ It is a **PWA**, the design has been thought to be viewed on cell phones in prio
 - [Marie Simonek](https://www.behance.net/mariesmk)
 - [Malvina Brauge](https://malvinabrauge.com/)
 
-## Pour voir le projet
+## To see the project
 
 ### Netlify
 
