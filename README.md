@@ -35,7 +35,7 @@ You can find the project online directly at the following address [react-weather
 ### `npm start`
 
 Runs the app in the development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run build`
 
