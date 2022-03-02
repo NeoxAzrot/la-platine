@@ -45,8 +45,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 Then you could see the project without running a `localhost` server.
 
-The build is minified and the filenames include the hashes. Then you could see the project without running a localhost server.
-
 ---
 
 [Sami Lafrance](https://www.samilafrance.com/)
